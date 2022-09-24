@@ -1,0 +1,277 @@
+{% extends 'index.html.twig' %}
+
+
+{% block titre %} Code Promo - B5511 - {% endblock %}
+
+{% block code %} B5511 {% endblock %}
+
+{% block code2 %} B5511 {% endblock %}
+
+{% block image_bookmaker %}<div class="carousel-item active"  style="background-image: url({{ asset("assets/index/img/1xbet/1xbet_1.png") }})" >{% endblock %}
+
+{% block inscription %}<a href="https://cutt.ly/SJ1TrPC">Inscription</a>{% endblock %}
+
+{% block lien_inscription %}<a class="cta-btn" href="https://cutt.ly/SJ1TrPC">S'inscrire sur 1xBet</a>{% endblock %}
+
+{% block bookmakers %} 1xBet {% endblock %}
+
+{% block autre_bookmakers %}
+    <li class="menu-has-children"><a href="">Bookmakers</a>
+        <ul>
+            <li><a href="{{ path('1win') }}">1Win</a></li>
+            <li><a href="{{ path('betwinner') }}">BetWinner</a></li>
+            <li><a href="{{ path('linebet') }}">LineBet</a></li>
+            <li><a href="{{ path('melbet') }}">MelBet</a></li>
+        </ul>
+    </li>
+{% endblock %}
+
+{% block start %}
+    <p>1xBet est actif sur Internet depuis 2011 et accepte les paris sportifs sur la base d'une licence internationale obtenue sur l'île de Curaçao. C'est le premier bookmaker à avoir proposé une aussi bonne sélection de marchés sportifs et le fameux bonus de 200% pour la première recharge. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+    <a href="{{ path('1xbet') }}#services" class="btn-get-started scrollto">En savoir +</a>
+{% endblock %}
+
+
+{% block promo %}
+    <p>👋 Les paris sportifs n'ont jamais été aussi pratiques et faciles. Il vous suffit de télécharger l'application 1xBet pour être au cœur du grand jeu ! Pour tous les nouveaux joueurs sur l'application mobile : bonus jusqu'à 65 000 FCFA à l'inscription.  Utilisez notre <strong>code promotionnel  B5511 </strong> officiel pour recevoir le bonus dès aujourd'hui. Suivez le guide d'inscription à 1xbet, qui vous permettra de recevoir tous vos bonus, d'avoir un compte certifié et de profiter des meilleures cotes, quel que soit votre pays de résidence. Je vais vous demander d'être attentif, 10 minutes qui seront très bien investies et rentables à long terme.✊💪</p>
+{% endblock %}
+
+{% block process %}
+
+    <div class="row">
+        <div class="col-lg-12">
+            <p align="center">Sélectionnez d'abord le type d'inscription que vous souhaitez.</p>
+            <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">Tout</li>
+                <li data-filter=".filter-app">Iphone</li>
+                <li data-filter=".filter-web">Afrique</li>
+                <li data-filter=".filter-card">France</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-9 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I1.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I1.jpg") }}" data-lightbox="portfolio" data-title="Iphone 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 1</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I2.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I2.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 2" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 2</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I3.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I3.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 3" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 3</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+
+                <video src="{{ asset("./assets/index/img/1xbet/1xbet_france.mp4") }}" height="235" width="330" controls></video>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Tutoriel</a></h4>
+                    <p>France</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I4.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I4.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 4" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 4</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I5.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I5.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 5" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 5</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I6.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I6.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 6" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 6</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I7.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I7.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 7" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 7</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I8.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I8.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 8" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 8</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp">
+            <div class="portfolio-wrap">
+                <video src="{{ asset("./assets/index/img/1xbet/1xbet.mp4") }}" height="235" width="330" controls></video>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Tutoriel</a></h4>
+                    <p>Afrique</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I9.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I9.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 9" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 9</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I10.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I10.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 10" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 10</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I11.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I11.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 11" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 11</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+                <figure>
+                    <img src="{{ asset("assets/index/img/1xbet/I12.jpg") }}" class="img-fluid" alt="">
+                    <a href="{{ asset("assets/index/img/1xbet/I12.jpg") }}" class="link-preview" data-lightbox="portfolio" data-title="Iphone 12" title="Preview"><i class="ion ion-eye"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Etape 12</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+                <video src="{{ asset("./assets/index/img/1xbet/1xbet_iphone.mp4") }}" height="235" width="330" controls></video>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Tutoriel</a></h4>
+                    <p>Iphone</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block footer_bookmakers %}
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('1win') }}">1Win</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('betwinner') }}">BetWinner</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('linebet') }}">LineBet</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('melbet') }}">MelBet</a></li>
+{% endblock %}

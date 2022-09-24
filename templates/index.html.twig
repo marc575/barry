@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>1xbet {% block titre %}  {% endblock %}</title>
+    <meta name="author" content="Marc Tatchou">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Code Promotionel B5511 ! ">
+    <meta property="og:site_name" content="Barry_Sport">
+    <meta name="twitter:title" property="og:title" itemprop="name" content="Barry_Sport - Nous proposons un code promotionnel unique pour 5 bookmakers">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="Notre code promotionnel * B5511 * vous fera recevoir une multitude de bonus après inscriptions sur 1xbet, betWinner, LineBet, 1Win, Melbet.">
+
+    <!-- Favicons -->
+    <link href="{{ asset("assets/index/img/logo9.png") }}" rel="icon">
+    <link href="{{ asset("assets/index/img/logo9.png") }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="{{ asset("assets/index/lib/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="{{ asset("assets/index/lib/font-awesome/css/font-awesome.min.css") }}" rel="stylesheet">
+    <link href="{{ asset("assets/index/lib/animate/animate.min.css") }}" rel="stylesheet">
+    <link href="{{ asset("assets/index/lib/ionicons/css/ionicons.min.css") }}" rel="stylesheet">
+    <link href="{{ asset("assets/index/lib/owlcarousel/assets/owl.carousel.min.css") }}" rel="stylesheet">
+    <link href="{{ asset("assets/index/lib/lightbox/css/lightbox.min.css") }}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{{ asset("assets/index/css/style.css") }}" rel="stylesheet">
+</head>
+
+<body>
+
+<!--==========================
+  Header
+============================-->
+<header id="header">
+    <div class="container-fluid">
+
+        <div id="logo" class="pull-left">
+            <h1><a href="#intro" class="scrollto">Code {% block code %}  {% endblock %}</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="menu-active"><a href="#intro">Accueil</a></li>
+                <li class="menu-has-children"><a href="#portfolio">Coupons</a>
+                    <ul>
+                        <li><a href="{{ path('register') }}">S'inscrire</a></li>
+                        <li><a href="{{ path('login') }}">Se connecter</a></li>
+                        <li><a href="{{ path('reset_password') }}">Changer le mot de passe</a></li>
+                        <li><a href="{{ path('logout') }}">Deconnexion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#services">Bonus</a></li>
+                <li><a href="#portfolio">Procédure d'inscription</a></li>
+                <li>{% block inscription %}  {% endblock %}</li>
+                {% block autre_bookmakers %}
+
+                {% endblock %}
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav><!-- #nav-menu-container -->
+    </div>
+</header><!-- #header -->
+
+<!--==========================
+  Intro Section
+============================-->
+<section id="intro">
+    <div class="intro-container">
+        <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+            <ol class="carousel-indicators"></ol>
+
+            <div class="carousel-inner" role="listbox">
+
+                {% block image_bookmaker %}  {% endblock %}
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>{% block bookmakers %}  {% endblock %}</h2>
+                            {% block start %} {% endblock %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+</section><!-- #intro -->
+
+<main id="main">
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+        <div class="container">
+
+            <header class="section-header wow fadeInUp">
+                <h3>Bonus</h3>
+                {% block promo %}
+
+                {% endblock %}
+            </header>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h4 class="title"><a href="#">Bonus tous les mercredis et vendredis</a></h4>
+                    <p class="description"></p>
+                </div>
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h4 class="title"><a href="#">Bonus d'anniversaire</a></h4>
+                    <p class="description"></p>
+                </div>
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h4 class="title"><a href="#">Une large gamme de jeux</a></h4>
+                    <p class="description"></p>
+                </div>
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h4 class="title"><a href="#">Retransmission en ligne de tous les matchs</a></h4>
+                    <p class="description"></p>
+                </div>
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h4 class="title"><a href="#">Paiements et recharges instantanés</a></h4>
+                    <p class="description"></p>
+                </div>
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h4 class="title"><a href="#">Un grand nombre de systèmes de paiement</a></h4>
+                    <p class="description"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio" class="section-bg">
+    <div class="container">
+        {% if (app.user) %}
+            <header class="section-header">
+                <h3 class="section-title">Coupons</h3>
+                <p style="font-size: 30px">Bienvenue, {{ app.user.name | capitalize }} !</p>
+                <p>Veuillez cliquer/Appuyer sur les images pour agrandir.</p>
+            </header>
+
+            <div class="row portfolio-container">
+                {% for coupon in coupons %}
+                    <div class="col-lg-6 col-md-6 portfolio-item filter-app wow fadeInUp">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                {% if coupon.couponImage is not empty %}
+                                    <img src="https://www.main.barrysport.com/public/uploads/images/{{ coupon.couponImage[0].fileName }}" class="img-fluid" alt="Image coupon">
+                                    <a href="https://www.main.barrysport.com/public/uploads/images/{{ coupon.couponImage[0].fileName }}" data-lightbox="portfolio" data-title="{{ coupon.message }}" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                                {% endif %}
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4><a href="">Bookmaker: {{ coupon.bookmaker }}</a></h4>
+                                <P>Code du coupon: {{ coupon.code }} </P>
+                                </p>
+                            </div>
+                        </div>
+                        <p>{{ coupon.auteur }} | Date d'ajout : {{ coupon.createdAt | date('d/m/Y') }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+        {% else %}
+            <header class="section-header">
+                <h3 class="section-title">Coupons</h3>
+                <h4 align="center" >
+                    Inscrivez-vous pour voir et reçevoir les coupons disponibles avec le code promo bonus D555 <br><br>
+                    <a href="{{ path('register') }}">S'inscrire</a>
+                </h4>
+            </header>
+
+        {% endif %}
+
+    </div>
+</section>
+    <!-- #portfolio -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+        <div class="container">
+
+            <header class="section-header">
+                <h3 class="section-title">Procédure d'inscription</h3>
+                <p>Veuillez cliquer/Appuyer sur les images pour agrandir.</p>
+            </header>
+            {% block process %}
+
+            {% endblock %}
+        </div>
+    </section><!-- #portfolio -->
+
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+        <div class="container text-center">
+            <h3>Qu'attendez-vous de plus ?</h3>
+            {% block lien_inscription %}  {% endblock %}
+        </div>
+    </section><!-- #call-to-action -->
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+        <div class="container">
+
+            <div class="section-header">
+                <h3>Contacts</h3>
+            </div>
+
+            <div class="row contact-info">
+
+                <div class="col-md-4">
+                    <div class="contact-address">
+                        <i class="ion-ios-location-outline"></i>
+                        <h3>Addresse</h3>
+                        <address>Abidjan, Cote d'ivoire</address>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-phone">
+                        <i class="ion-ios-telephone-outline"></i>
+                        <h3>Téléphone</h3>
+                        <p><a href="https://wa.me/2250708618478">+225 0708618478</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-email">
+                        <i class="ion-ios-email-outline"></i>
+                        <h3>Email</h3>
+                        <p><a href="#">Barryadamagd@gmail.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #contact -->
+
+</main>
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 footer-info">
+                    <h3>Code {% block code2 %}  {% endblock %}</h3>
+                    <p>Notre code promotionnel vous fera recevoir une multitude de bonus après inscriptions chez nos différents bookmakers!</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        {% block footer_bookmakers %}
+
+                        {% endblock %}
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-contact">
+                    <h4>Contacts</h4>
+                    <p>
+                        <strong>Ville:</strong> Abidjan<br>
+                        <strong>Pays:</strong> Cote d'ivoire <br>
+                        <strong>Téléphone:</strong> +225 0708618478<br>
+                        <strong>Email:</strong> Barryadamagd@gmail.com<br>
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://twitter.com/BarryAd33179246?t=GtZJuKXuInlQUh-5eh1VWg&s=09" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://wa.me/2250708618478" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/groups/2438303523050982/?ref=share_group_link" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://youtu.be/sdutwuc1xn0" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                        <a href="https://t.me/TZZEdxbetonebetforrone" class="telegram"><i class="fa fa-telegram"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright, Tous droits reservés !
+        </div>
+        <div class="credits">
+            Réalisé par <a href="https://wa.me/23756450734"> Marc Analytica </a>
+        </div>
+    </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="{{ asset("assets/index/lib/jquery/jquery.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/jquery/jquery-migrate.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/bootstrap/js/bootstrap.bundle.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/easing/easing.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/superfish/hoverIntent.js") }}"></script>
+<script src="{{ asset("assets/index/lib/superfish/superfish.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/wow/wow.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/waypoints/waypoints.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/counterup/counterup.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/owlcarousel/owl.carousel.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/isotope/isotope.pkgd.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/lightbox/js/lightbox.min.js") }}"></script>
+<script src="{{ asset("assets/index/lib/touchSwipe/jquery.touchSwipe.min.js") }}"></script>
+<!-- Contact Form JavaScript File -->
+<script src="{{ asset("assets/index/contactform/contactform.js") }}"></script>
+
+<!-- Template Main Javascript File -->
+<script src="{{ asset("assets/index/js/main.js") }}"></script>
+
+</body>
+</html>

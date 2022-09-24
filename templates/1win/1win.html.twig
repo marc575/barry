@@ -1,0 +1,81 @@
+{% extends 'index.html.twig' %}
+
+
+{% block titre %} Code Promo - B5511 - {% endblock %}
+
+{% block code %} B5511 {% endblock %}
+
+{% block code2 %} B5511 {% endblock %}
+
+{% block image_bookmaker %}<div class="carousel-item active"  style="background-image: url({{ asset("assets/index/img/1win/1win.jpg") }})" >{% endblock %}
+
+{% block inscription %}<a href="https://1wziw.top/#o47h">Inscription</a>{% endblock %}
+
+{% block bookmakers %} 1Win {% endblock %}
+
+{% block lien_inscription %}<a class="cta-btn" href="https://1wziw.top/#o47h">S'inscrire sur 1win</a>{% endblock %}
+
+{% block autre_bookmakers %}
+    <li class="menu-has-children"><a href="">Bookmakers</a>
+        <ul>
+            <li><a href="{{ path('1xbet') }}">1xBet</a></li>
+            <li><a href="{{ path('betwinner') }}">BetWinner</a></li>
+            <li><a href="{{ path('linebet') }}">LineBet</a></li>
+            <li><a href="{{ path('melbet') }}">MelBet</a></li>
+        </ul>
+    </li>
+{% endblock %}
+
+{% block start %}
+<p>1win est un bookmaker assez récent. La société a été fondée en 2016, jusqu'en 2018 c'était FirstBet.1win accepte des joueurs du monde entier, y compris du continent africain, le site est traduit et adapté en 9 langues, dont le français. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+<a href="{{ path('1win') }}#services" class="btn-get-started scrollto">En savoir +</a>
+{% endblock %}
+
+{% block promo %}
+    <p>👋Le site ne propose pas seulement des paris sportifs et des eSports, mais aussi des jeux de casino, de poker, de loterie et de sport virtuel. Cette entreprise en ligne est populaire, notamment grâce à son généreux bonus sur le premier dépôt de 500%. Utilisez notre <strong>code promotionnel  B5511 </strong> officiel pour recevoir ce bonus dès aujourd'hui.✊💪</p>
+{% endblock %}
+
+{% block process %}
+    <div class="row">
+        <div class="col-lg-12">
+            <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">Tout</li>
+                <li data-filter=".filter-app">Inscription</li>
+                <li data-filter=".filter-card">Recharge</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-9 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+                <video src="{{ asset("./assets/index/img/1win/1win.mp4") }}" height="235" width="330" controls></video>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Tutoriel</a></h4>
+                    <p>Inscription</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+                <video src="{{ asset("./assets/index/img/1win/1win_recharge.mp4") }}" height="235" width="330" controls></video>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Tutoriel</a></h4>
+                    <p>Recharge</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block footer_bookmakers %}
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('1xbet') }}">1xBet</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('betwinner') }}">BetWinner</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('linebet') }}">LineBet</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('melbet') }}">MelBet</a></li>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends 'index.html.twig' %}
+
+
+{% block titre %} Code Promo - B5511 - {% endblock %}
+
+{% block code %} B5511 {% endblock %}
+
+{% block code2 %} B5511 {% endblock %}
+
+{% block image_bookmaker %}<div class="carousel-item active"  style="background-image: url({{ asset("assets/index/img/betwinner/betwinner.jpg") }})" >{% endblock %}
+
+{% block inscription %}<a href="https://cutt.ly/kHcmbEq">Inscription</a>{% endblock %}
+
+{% block bookmakers %} BetWinner {% endblock %}
+
+{% block lien_inscription %}<a class="cta-btn" href="https://cutt.ly/kHcmbEq">S'inscrire sur BetWinner</a>{% endblock %}
+
+{% block autre_bookmakers %}
+    <li class="menu-has-children"><a href="">Bookmakers</a>
+        <ul>
+            <li><a href="{{ path('1win') }}">1Win</a></li>
+            <li><a href="{{ path('1xbet') }}">1xBet</a></li>
+            <li><a href="{{ path('linebet') }}">LineBet</a></li>
+            <li><a href="{{ path('melbet') }}">MelBet</a></li>
+        </ul>
+    </li>
+{% endblock %}
+
+{% block start %}
+<p>Betwinner est un bookmaker de nouvelle génération qui opère depuis 2018. Le site officiel, aux couleurs agréables, dispose d'une interface utilisateur moderne et compréhensible. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+<a href="{{ path('betwinner') }}#services" class="btn-get-started scrollto">En savoir +</a>
+{% endblock %}
+
+{% block promo %}
+    <p>👋 Bonjour l'équipe, je vous retrouve pour notre nouveau tutoriel d'inscription qui vous permettra de parier sur BETWINNER et de profiter des meilleures cotes, quel que soit votre pays de résidence. Je vous invite à bien faire attention, car l'inscription ne prend même pas 10 minutes, 10 minutes qui seront très bien investies et rentables à long terme. Le bonus pour les nouveaux membres (jusqu'à 100€), ainsi que l'assistance 24h/24 font de BETWINNER l'un des meilleurs jeunes bookmakers du marché. Utilisez notre <strong>code promotionnel  B5511 </strong> pour recevoir le bonus dès aujourd'hui.✊💪</p>
+{% endblock %}
+
+{% block process %}
+    <div class="row">
+        <div class="col-lg-12">
+            <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">Tout</li>
+                <li data-filter=".filter-app">Inscription</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-9 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+                <video src="{{ asset("./assets/index/img/betwinner/betwinner.mp4") }}" height="235" width="330" controls></video>
+
+                <div class="portfolio-info">
+                    <h4><a href="#">Tutoriel</a></h4>
+                    <p>Inscription</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block footer_bookmakers %}
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('1win') }}">1Win</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('1xbet') }}">1xBet</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('linebet') }}">LineBet</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="{{ path('melbet') }}">MelBet</a></li>
+{% endblock %}

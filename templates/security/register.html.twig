@@ -1,0 +1,73 @@
+{% extends 'security/login.html.twig' %}
+
+
+{% block body %}
+    <h6 class="font-weight-light">Ajouter un nouvel utilisateur !</h6>
+    <form class="pt-3" method="post" id="form">
+        {% if error is not null %}
+            <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
+        {% if success is not null %}
+            <div class="alert alert-primary">{{ success }}</div>
+        {% endif %}
+        <div class="form-group">
+            <label for="exampleInputUsername1">Nom d'utilisateur</label>
+            <input type="text" required class="form-control" name="name" id="name" placeholder="Entrer votre nom d'utilisateur...">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Adresse Email</label>
+            <input type="email" class="form-control" required name="email" id="email" placeholder="exemple@gmail.com...">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Mot de passe</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="mot de passe...">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputConfirmPassword1">Confirmer le mot de passe</label>
+            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="Confirmer le mot de passe...">
+        </div>
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+        <button type="submit" class="btn btn-primary mr-2" id="btnRegister">Enregistrer</button>
+        <br><br><br>
+        <div class="mb-2">
+            <button type="button" class="btn btn-block btn-facebook auth-form-btn">
+                <a href="{{ path('1xbet') }}" style="color:white;">Accueil</a>
+            </button>
+        </div>
+    </form>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        $('#form').on('submit', function (e) {
+            e.preventDefault();
+            var url = $("#form").attr('action');
+            var data = $(this).serialize();
+            $.ajax({
+                url: url,
+                data: data,
+                type: 'post',
+                beforeSend: function () {
+                    $("#message").html("");
+                    $("#btnRegister").text("Patientez ...").prop({disabled: true});
+                },
+                complete: function () {
+                    $('#btnRegister').text("Connexion").prop({disabled: false});
+                },
+                success: function (data) {
+                    if(data.status === 1){
+                        $("#message").html("<div class='alert alert-success'>" + data.mes + "</div>");
+                        setTimeout(function () {
+                            window.location.assign(data.url);
+                        }, 2000);
+                    }else{
+                        $("#message").html("<div class='alert alert-danger'>" + data.mes + "</div>");
+                    }
+                },
+                error: function () {
+                    $("#message").html("<div class='alert alert-danger'>Une erreur est survenue, reessayez !</div>");
+                }
+            })
+        });
+    </script>
+{% endblock %}
